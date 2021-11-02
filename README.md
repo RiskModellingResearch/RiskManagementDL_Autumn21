@@ -7,3 +7,8 @@
 1. Введение. Практика на PyTorch и TensorFlow (week01)
 2. Градиентный спуск. Backpropagation (week02)
 3. Backpropagation для MLP на PyTorch (week03)
+4. Эвристики для обучения нейронных сетей (week04)
+5. Эвристики для обучения нейронных сетей. Часть2 (week05)
+6. DataLoader (week05)
+7. TensorBoard, MLFlow (week06)
+8. Feature Engineering (week06)
