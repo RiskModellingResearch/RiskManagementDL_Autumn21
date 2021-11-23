@@ -44,14 +44,14 @@ class CustomDataset(Dataset):
 
         X.drop(weekday_columns, axis=1, inplace=True)
 
-        X['Weekday_cos'] = np.cos(2 * np.pi / 7.) * weekdays
-        X['Weekday_sin'] = np.sin(2 * np.pi / 7.) * weekdays
+        X['Weekday_cos'] = np.cos((2 * np.pi / 7.) * weekdays)
+        X['Weekday_sin'] = np.sin((2 * np.pi / 7.) * weekdays)
 
-        X['Hour_cos'] = np.cos(2 * np.pi / 24.) * X['Hour'].values
-        X['Hour_sin'] = np.sin(2 * np.pi / 24.) * X['Hour'].values
+        X['Hour_cos'] = np.cos((2 * np.pi / 24.) * X['Hour'].values)
+        X['Hour_sin'] = np.sin((2 * np.pi / 24.) * X['Hour'].values)
 
-        X['Month_cos'] = np.cos(2 * np.pi / 12.) * X['Month'].values
-        X['Month_sin'] = np.sin(2 * np.pi / 12.) * X['Month'].values
+        X['Month_cos'] = np.cos((2 * np.pi / 12.) * X['Month'].values)
+        X['Month_sin'] = np.sin((2 * np.pi / 12.) * X['Month'].values)
 
         X['Gender'] = np.argmax(X[['Sex_Female', 'Sex_Male', 'Sex_Unknown']].values, axis=1)
 

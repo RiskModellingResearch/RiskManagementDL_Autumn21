@@ -155,10 +155,10 @@ def run_experiment():
     X_train, X_test, y_train, y_test, train_loader, test_loader = create_data_loader(features, labels)
 
     mlflow.log_param("LEARNING_RATE", LEARNING_RATE)
-    mlflow.log_metric("INPUT_SIZE", INPUT_SIZE)
-    mlflow.log_metric("HIDDEN_SIZE", HIDDEN_SIZE)
+    mlflow.log_param("INPUT_SIZE", INPUT_SIZE)
+    mlflow.log_param("HIDDEN_SIZE", HIDDEN_SIZE)
     mlflow.log_param("NROF_CLASSES", OUTPUT_SIZE)
-    mlflow.log_metric("BATCH_SIZE", BATCH_SIZE)
+    mlflow.log_param("BATCH_SIZE", BATCH_SIZE)
 
     run_train(train_loader, test_loader)
 
