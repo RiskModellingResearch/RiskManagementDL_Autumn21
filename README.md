@@ -12,3 +12,5 @@
 6. DataLoader (week05)
 7. TensorBoard, MLFlow (week06)
 8. Feature Engineering (week06)
+9. Keras & TensorFlow Tutorial (week07)
+10. Нейронные сети для табличных данных (week08)
