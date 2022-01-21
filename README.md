@@ -14,3 +14,8 @@
 8. Feature Engineering (week06)
 9. Keras & TensorFlow Tutorial (week07)
 10. Нейронные сети для табличных данных (week08)
+11. Компьютерное зрение (week09)
+12. NLP (week10)
+13. Transformer (week11)
+14. Transformer для разных типов данных (week12)
+15. Graph Neural Networks. AI in Risk Modeling (week13)
